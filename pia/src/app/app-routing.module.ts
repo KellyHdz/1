@@ -36,6 +36,10 @@ const routes: Routes = [
     path: 'detalle-producto', canActivate:[AuthGuard],
     loadChildren: () => import('./detalle-producto/detalle-producto.module').then( m => m.DetalleProductoPageModule)
   },
+  {
+    path: 'destinos', canActivate:[AuthGuard],
+    loadChildren: () => import('./destinos/destinos.module').then( m => m.DestinosPageModule)
+  },
 
 
 ];

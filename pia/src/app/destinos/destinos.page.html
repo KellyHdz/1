@@ -1,0 +1,44 @@
+<ion-content padding>
+<form [formGroup]="ionicForm" (ngSubmit)="submitForm()" novalidate>
+  <ion-item (click)="addDirection()">
+  </ion-item>
+</form>
+  <ion-grid>
+    <ion-row> <!--Fila de foto-->
+      <ion-col>
+       <img src="assets/Ubicacion.PNG" alt="" height="100%" width="100%">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-item (click)="addDirection()">
+    <ion-label class="normal">Ubicación Sembradio 1</ion-label>
+    <ion-buttons>
+      <ion-button>
+          <ion-icon slot="icon-only" color="danger" name="location"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+</ion-item>
+</ion-content>
+
+
+<ion-content padding>
+  <form [formGroup]="ionicForm" (ngSubmit)="submitForm()" novalidate>
+    <ion-item (click)="addDirection()">
+    </ion-item>
+  </form>
+    <ion-grid>
+      <ion-row> <!--Fila de foto-->
+        <ion-col>
+         <img src="assets/Ubicacion.PNG" alt="" height="100%" width="100%">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-item (click)="addDirection()">
+      <ion-label class="normal">Ubicación Sembradio 2</ion-label>
+      <ion-buttons>
+        <ion-button>
+            <ion-icon slot="icon-only" color="danger" name="location"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+  </ion-item>
+</ion-content>
