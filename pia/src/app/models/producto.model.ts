@@ -4,4 +4,5 @@ export interface Producto{
     image: string;
     especificaciones: string[];
     sembradio: number;
+    sonido: string;
 } 

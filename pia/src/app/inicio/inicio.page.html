@@ -11,16 +11,17 @@
     <h1>Granja</h1>
   </div> 
   <ion-card size= "8">
+    <ion-card (click)="Sonido(item)"> 
     <ion-card-content>
       <ion-img src="assets/granja.jpeg"></ion-img>
     </ion-card-content>
+  </ion-card>
   </ion-card>
 </ion-header>
 
 <ion-content>
   <div class="center-text">
     <h2>Las mejores frutas y verduras</h2>
-  </div> 
   <div class="center-text">
     <h2>en el mejor lugar</h2>
   </div>
@@ -28,12 +29,6 @@
     <h2><p></p><p></p><p></p></h2>
   </div>
   <div class="center-text">
-    Tenemos los mejores productos de la mejor calidad
+    Tenemos los mejores productos de la mejor calidad muy frescos y listos para que el consumidor pueda disfrutarlos
   </div>
-  <div class="center-text">
-    muy frescos y listos para que el consumidor pueda
-  </div>
-  <div class="center-text">
-    disfrutarlos
-  </div>
-</ion-content>
+

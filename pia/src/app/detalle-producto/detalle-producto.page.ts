@@ -22,5 +22,10 @@ export class DetalleProductoPage implements OnInit {
       this.producto = this.productoService.getProducto(this.idProducto);
     });
   }
-
+  Sonido(item){
+    let sonido = new Audio();
+    sonido.src = item.sonido;
+    sonido.load();
+    sonido.play();
+  }
 } 
