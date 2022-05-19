@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title> <p align="center"> PRODUCTOS QUE OFRECEMOS</p></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let producto of productos" [routerLink]="['/detalle-producto', producto.id]">
+        <ion-img style="width: 80px; height: 80px;" [src]="producto.image"></ion-img>
+        {{producto.nombre}}
+    </ion-item>
+  </ion-list>
+
+
+</ion-content> 
